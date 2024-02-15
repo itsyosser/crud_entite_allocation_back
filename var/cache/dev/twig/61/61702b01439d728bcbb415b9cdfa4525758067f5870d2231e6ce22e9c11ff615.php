@@ -105,7 +105,7 @@ class __TwigTemplate_c8b92b6de6e6fb1f3662172dffc17800bb40312193fc896c777a023cb43
                 </div>
                
                 <div class=\"row mb-3\">
-                  <label for=\"inputText\" class=\"col-sm-2 col-form-label\">quantity</label>
+                  <label for=\"inputText\" class=\"col-sm-2 col-form-label\">prix</label>
                   <div class=\"col-sm-10\">
                     ";
         // line 42
@@ -132,22 +132,32 @@ class __TwigTemplate_c8b92b6de6e6fb1f3662172dffc17800bb40312193fc896c777a023cb43
         echo "
                   </div>
                 </div>
-                
+                 
+                  <div class=\"row mb-3\">
+                  <label for=\"inputText\" class=\"col-sm-2 col-form-label\">image</label>
+                  <div class=\"col-sm-10\">
+                    ";
+        // line 62
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 62, $this->source); })()), "image", [], "any", false, false, false, 62), 'widget', ["attr" => ["class" => "form-control"]]);
+        echo "
+                  </div>
+                </div>
+
                 
 
                 <div class=\"row mb-3\">
                   <label class=\"col-sm-2 col-form-label\"></label>
                   <div class=\"col-sm-10\">
                     ";
-        // line 64
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 64, $this->source); })()), "save", [], "any", false, false, false, 64), 'widget', ["attr" => ["class" => "btn btn-primary"]]);
+        // line 71
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 71, $this->source); })()), "save", [], "any", false, false, false, 71), 'widget', ["attr" => ["class" => "btn btn-primary"]]);
         echo "
                   </div>
                 </div>
 
                 ";
-        // line 68
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 68, $this->source); })()), 'form_end');
+        // line 75
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 75, $this->source); })()), 'form_end');
         echo "<!-- End General Form Elements -->
 
             </div>
@@ -190,7 +200,7 @@ class __TwigTemplate_c8b92b6de6e6fb1f3662172dffc17800bb40312193fc896c777a023cb43
      */
     public function getDebugInfo()
     {
-        return array (  150 => 68,  143 => 64,  131 => 55,  122 => 49,  112 => 42,  102 => 35,  93 => 29,  68 => 6,  58 => 5,  35 => 4,);
+        return array (  160 => 75,  153 => 71,  141 => 62,  131 => 55,  122 => 49,  112 => 42,  102 => 35,  93 => 29,  68 => 6,  58 => 5,  35 => 4,);
     }
 
     public function getSourceContext()
@@ -234,7 +244,7 @@ class __TwigTemplate_c8b92b6de6e6fb1f3662172dffc17800bb40312193fc896c777a023cb43
                 </div>
                
                 <div class=\"row mb-3\">
-                  <label for=\"inputText\" class=\"col-sm-2 col-form-label\">quantity</label>
+                  <label for=\"inputText\" class=\"col-sm-2 col-form-label\">prix</label>
                   <div class=\"col-sm-10\">
                     {{ form_widget(form.prix,{'attr':{'class':'form-control'}}) }}
                   </div>
@@ -252,7 +262,14 @@ class __TwigTemplate_c8b92b6de6e6fb1f3662172dffc17800bb40312193fc896c777a023cb43
                     {{ form_widget(form.quantity,{'attr':{'class':'form-control'}}) }}
                   </div>
                 </div>
-                
+                 
+                  <div class=\"row mb-3\">
+                  <label for=\"inputText\" class=\"col-sm-2 col-form-label\">image</label>
+                  <div class=\"col-sm-10\">
+                    {{ form_widget(form.image,{'attr':{'class':'form-control'}}) }}
+                  </div>
+                </div>
+
                 
 
                 <div class=\"row mb-3\">

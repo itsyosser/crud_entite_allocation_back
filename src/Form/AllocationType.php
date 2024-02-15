@@ -6,7 +6,7 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
-
+use Symfony\Component\Form\Extension\Core\Type\FileType;
 class AllocationType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options): void
@@ -16,6 +16,10 @@ class AllocationType extends AbstractType
             ->add('prix')
             ->add('date')
             ->add('quantity')
+            ->add('image', FileType::class, [
+                'label' => 'Upload an image',
+                'required' => false,
+            ])
             ->add('save',SubmitType::class)
         ;
     }

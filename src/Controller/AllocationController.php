@@ -40,7 +40,8 @@ class AllocationController extends AbstractController
         return $this->render('admin/index.html.twig', [
             'allocation' => $allocation
         ]);}
-#[Route('/addformallocation', name: 'addformallocation')]
+    
+        #[Route('/addformallocation', name: 'addformallocation')]
     public function addformallocation(ManagerRegistry $managerRegistry, Request $req ): Response
     {  $x=$managerRegistry->getManager();  
         $allocation=new allocation();
